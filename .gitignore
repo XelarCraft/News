@@ -1,0 +1,32 @@
+# Gradle
+.gradle/
+**/build/
+**/out/
+
+# Local properties and secrets
+local.properties
+*.keystore
+*.jks
+*.pem
+*.p12
+
+# OS / IDE trash
+.idea/
+.idea/*
+*.iml
+*.ipr
+*.iws
+.DS_Store
+
+# Android specific
+captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+*.ap_
+
+# Logs
+*.log
+
+# Misc
+gen-external-apklibs/
