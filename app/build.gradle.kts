@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+    alias(libs.plugins.ksp.plugin)
 }
 
 android {
@@ -56,4 +57,21 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+
+    implementation(libs.retrofit)
+    implementation(libs.okhttp)
+
+    implementation(libs.paging3)
+    implementation(libs.paging3.compose)
+    implementation(libs.test.paging)
+
+    implementation(libs.room)
+    implementation(libs.room.paging)
+    implementation(libs.test.room)
+    ksp(libs.room.compiler)
+
+    implementation(libs.hilt)
+    ksp(libs.hilt.compiler)
+
+    implementation(libs.coil)
 }
